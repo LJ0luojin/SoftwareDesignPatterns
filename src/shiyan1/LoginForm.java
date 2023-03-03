@@ -6,8 +6,9 @@ public class LoginForm {
     public LoginForm(){
         login = new LoginBO();
     }
-    public void vaildate(String account,String password){
-        login.vaildate(account,password);
+    public void validate(String account,String password){
+        MainForm mainForm = new MainForm();
+        boolean validate = login.validate(account, password);
     }
 
 }

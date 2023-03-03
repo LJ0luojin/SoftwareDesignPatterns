@@ -6,7 +6,7 @@ public class LoginBO {
     public void setUserDAO(IUserDAO userDAO){
         this.userDAO = userDAO;
     }
-    public boolean vaildate(String account, String password) {
+    public boolean validate(String account, String password) {
         return userDAO.findUserByAccAndPwd(account, password);
     }
 }
